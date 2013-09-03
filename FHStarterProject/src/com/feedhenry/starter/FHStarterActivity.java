@@ -35,17 +35,17 @@ public class FHStarterActivity extends Activity {
           }
         });
         
-//        final Button button = (Button) findViewById(R.id.button1);
-//        button.setOnClickListener(new View.OnClickListener() 
-//        {
-//           public void onClick(View v) {
-//        	   Intent i = new Intent(Intent.ACTION_MAIN);
-//               PackageManager manager = getPackageManager();
-//               i = manager.getLaunchIntentForPackage("com.unity3d.player");
-//               i.addCategory(Intent.CATEGORY_LAUNCHER);
-//               startActivity(i);
-//            }
-//       });
+        final Button button = (Button) findViewById(R.id.button1);
+        button.setOnClickListener(new View.OnClickListener() 
+        {
+           public void onClick(View v) {
+        	   Intent i = new Intent(Intent.ACTION_MAIN);
+               PackageManager manager = getPackageManager();
+               i = manager.getLaunchIntentForPackage("com.unity3d.player");
+               i.addCategory(Intent.CATEGORY_LAUNCHER);
+               startActivity(i);
+            }
+       });
     }
 
     @Override
